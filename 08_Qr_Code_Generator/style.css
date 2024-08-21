@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    border: black solid 2px;
+    border-radius: 25px;
+    padding: 20px;
+}
+.container h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+.container input{
+    border: none;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-left: 90px;
+    font-size: 15px;
+}
+.container button{
+    margin: 20px;
+    margin-left: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 25px;
+    background: #00feba7d;
+    box-shadow: 0px 0px 10px black;
+}
+.Qrcode{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.Qrcode img{
+    width: 100%;
+    padding: 10px;
+}
+.Qrcode.show-img{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 10px auto;
+    padding: 5px 20px 20px 5px;
+    border: 1px solid black;
+}

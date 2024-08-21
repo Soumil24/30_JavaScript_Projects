@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" name="City" id="city" placeholder="Enter The City Name">
+            <button><img src="Assets/search.png" alt="" id="search"></button>
+        </div>
+        <p id="error">Invalid City Name</p>
+        <div class="display">
+            <img src="Assets/clouds.png" class="Wether-icon">
+            <h2 class="temp">22 °C</h2>
+            <h1 class="city">surat</h1>
+            <div class="details">
+                <div class="col">
+                    <img src="Assets/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="Assets/wind.png" alt="">
+                    <div>
+                        <p class="wind">12 Km/H</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const apikey = "4f2263f0e204186497e6fa82f1b13825";
+    const apiurl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+    let input = document.querySelector("#city");
+    let icon = document.querySelector(".Wether-icon");
+    // async function coz there is fetching on data
+    async function GetData(city) {
+        // giving add of data by await fetch method 
+        const response = await fetch(apiurl + city + `&appid=${apikey}`);
+        // if will run when there is invalid input (response will throw 404 error)
+        if (response.status == 404) {
+            document.querySelector("#error").style.display = "block"
+            document.querySelector(".display").style.display = "none"
+        }
+        else {
+            // storing data coming from api
+            let data = await response.json();
+            // console.log(data);
+            document.querySelector(".city").innerHTML = data.name;
+            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+            document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+            document.querySelector(".wind").innerHTML = data.wind.speed + "Km/H";
+            input.innerHTML = "";
+            document.querySelector("#error").style.display = "none"
+            document.querySelector(".display").style.display = "block"
+            console.log(icon.src);
+
+            // changing icon accouding to the data 
+            if (data.weather[0].main == "Clouds") {
+                icon.src = "Assets/clouds.png";
+            }
+            else if (data.weather[0].main == "Drizzle") {
+                icon.src = "Assets/drizzle.png";
+            }
+            else if (data.weather[0].main == "Mist") {
+                icon.src = "Assets/mist.png";
+            }
+            else if (data.weather[0].main == "Rain") {
+                icon.src = "Assets/rain.png";
+            }
+            else if (data.weather[0].main == "Snow") {
+                icon.src = "Assets/snow.png";
+            }
+        }
+
+    }
+    document.querySelector("#search").addEventListener('click', () => {
+        // console.log(input.value);
+        let cityname = input.value;
+        GetData(cityname)
+    })
+</script>
+
+</html>
