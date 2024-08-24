@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Player</title>
+    <script src="https://kit.fontawesome.com/a8a188ec44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="navbar">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="music">
+                <img src="Assets/song img.png">
+                <audio id="song"><source src="Assets/Tauba_Tauba_Bad_Newz_Vicky_Kaushal_Triptii_Dimri_Karan_Aujla_In_cinemas_19th_July_(youconvert.net).mp3"></audio>
+                <h2>Tauba Tauba</h2>
+                <input type="range" value="0" id="Progress">
+            </div>
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="control"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
