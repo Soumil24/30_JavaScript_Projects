@@ -8,12 +8,13 @@ body{
 .QuizApp{
     width: 100%;
     max-width: 600px;
+    padding: 0px 0px 20px 0px;
     margin: 100px auto 0;
     background: #fff;
     border-radius: 25px;
 }
 .QuizApp h2{
-    padding: 10px 10px 10px 250px;
+    padding: 10px 10px 10px 10px;
 }
 .question{
     padding: 15px;
@@ -42,7 +43,7 @@ body{
 #next{
     outline: none;
     border: none;
-    margin: 10px 0px 10px 240px;
+    margin: 10px 0px 10px 20px;
     padding: 10px 20px;
     border-radius: 25px;
     background-color: blue;

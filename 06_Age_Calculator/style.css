@@ -49,3 +49,20 @@
     border: none;
     color: yellow;
 }
+@media screen and (max-width: 768px) {
+    .calculator{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .calculator h1{
+        max-width: 80vw;
+    }  
+    .calculator input{
+        margin: 15px 40px 25px 0px;
+    }
+    .ans{
+        width: 100%;
+        max-width: 200px;
+        height: 100%;
+    }
+}
