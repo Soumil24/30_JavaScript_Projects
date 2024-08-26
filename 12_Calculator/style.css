@@ -29,6 +29,24 @@
     color: #EBD3F8;
     text-shadow: black 2px 2px 5px;
 }
+form input.equal{
+    width: 135px;
+}
+.calculator form input:hover{
+    box-shadow: -1px -1px 10px #2E073F,1px 1px 10px #AD49E1;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    box-shadow: none;
+    outline: none;
+    font-size: 45px;
+    flex: 1;
+}
 @media screen and (max-width: 768px)  {
     .calculator form input{
         width: 40px;
