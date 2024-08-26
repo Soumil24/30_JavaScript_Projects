@@ -44,3 +44,14 @@
     color: #1e3050;
     background: white;
 }
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        max-width: 280px;
+    }
+    .displayTime{
+        margin: 20px;
+    }
+}

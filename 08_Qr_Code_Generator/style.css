@@ -58,3 +58,20 @@
     padding: 5px 20px 20px 5px;
     border: 1px solid black;
 }
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+        max-width: 300px;
+    }
+    .container input{
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+    }
+    .container button{
+        margin: 20px;
+        margin-left: 90px;
+        padding: 10px;
+    }
+    
+}
