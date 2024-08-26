@@ -35,7 +35,7 @@ form input.equal{
 .calculator form input:hover{
     box-shadow: -1px -1px 10px #2E073F,1px 1px 10px #AD49E1;
 }
-form .display{
+form .display{  
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
@@ -53,6 +53,9 @@ form .display input{
         width: 40px;
         height: 40px;
         font-size: 10px;
+    }
+    form .display input{
+        font-size: 35px;
     }
     form input.equal{
         width: 95px;
