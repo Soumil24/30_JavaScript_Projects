@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: #6B8A7A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 220px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    background: #B7B597;
+}
+.container input{
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 30px;
+}
+.container img{
+    width: 34px;
+    height: 24px;
+    cursor: pointer;
+}
