@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation - Easy Tutorials YouTube Channel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a8a188ec44.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="InputName" onkeyup="ValidationName()">
+        <span id="Name-Error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="InputPhone" onkeyup="ValidationPhone()">
+        <span id="Phone-Error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="InputEmail" onkeyup="ValidationEmail()">
+        <span id="Email-Error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="InputMessage" onkeyup="ValidationMessage()"></textarea>
+        <span id="Message-Error"></span>
+      </div>
+
+      <button onclick="return ValidationForm()">Submit</button>
+      <span id="Submit-Error"></span>
+    </form>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>

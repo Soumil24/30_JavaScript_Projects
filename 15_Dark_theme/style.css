@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primarycolor: #fff;
+    --secondary-color: #000;
+}
+.dark-Theme{
+    --primarycolor: #000;
+    --secondary-color: #fff;
+}
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--primarycolor);
+    color: var(--secondary-color);
+}
+img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
