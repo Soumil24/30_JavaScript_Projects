@@ -39,3 +39,12 @@
     cursor: pointer;
     margin: 30px;
 }
+@media screen and (max-width: 768px)  {
+    .gallery{
+        overflow-x: scroll;
+    }
+    .gallery div{
+        display: flex;
+        flex-direction: column;
+    }
+}

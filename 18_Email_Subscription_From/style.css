@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background:   #6A9C89;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.text{
+    width: 80vw;
+    margin: 20px;
+    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 25px;
+    background: #FFF5E4;
+    color:#CD5C08;
+    text-shadow: 1px 1px 3px #000;
+}
+.text span{
+    color: black;
+    letter-spacing: 2px;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+form{
+    margin: 20px;
+    margin-top: 50px;
+    width: fit-content;
+    display: flex;
+}
+form input{
+    border-top: 2px black solid;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid;
+    border-right: none;
+    outline: none;
+    padding: 10px 20px;
+    height: 26px;
+    width: 30vw;
+    font-size: 20px;
+    border-radius: 20px 0px 0px 20px;
+}
+form button{
+    background-color:#C1D8C3;
+    border: 0;
+    outline: none;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0px;
+    transition: 0.5s;
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+}
+form button:hover{
+    background-color: #6A9C89;
+}
+#Sucess{
+    border: none;
+    font-size: larger;
+}
+@media screen and (max-width: 768px) {
+    form{
+        margin-left: 0px;
+    }
+    form input{
+        width: 50vw;
+    }
+}
