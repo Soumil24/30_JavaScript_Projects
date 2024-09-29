@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#795757,#FFF0D1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h1 span{
+    color: #FFF0D1;
+    border-bottom: 3px dotted black;
+}
+.containor textarea{
+    width: 40vw;
+    height: 40vh;
+    background: transparent;
+    padding: 20px;
+    border-radius: 30px;
+    color: black;
+}
+.row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 45vw;
+}
+.row select{
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    appearance: none;
+    background: transparent;
+    background-image: url(Assets/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 14px) ;
+    background-position-y: 14px ;
+}
+.row button{
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF0D1;
+    border: none;
+}
+.row button img{
+    padding: 0px 5px;
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100vw;
+    }
+    h1{
+        margin-left: 20px;
+    }
+    .row{
+        display: block;
+        gap: 10px;
+        width: 20vw;
+    }
+    .containor{
+        padding-left: 20px;
+    }
+    .containor textarea{
+        width: 70vw;
+        height: 30vh;
+        margin-bottom: 20px;
+    }
+    .row select{
+        margin-bottom: 20px;
+    }
+}
