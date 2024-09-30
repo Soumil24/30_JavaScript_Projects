@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    background: #8967B3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conatiner{
+    width: 50vw;
+    height: 60vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 25vw;
+    height: 70vh;
+    border-radius: 30px;
+    background-color: #CB80AB;
+    position: relative;
+}
+.left img{
+    width: 25vw;
+    height: 70vh;
+    object-fit: contain;
+}
+.control{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.btn{
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: gray;
+}
+.btn.active{
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: black;
+}
+.right{
+    width: 25vw;
+    height: 60vh;
+    padding: 20px 0px 0px 20px;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #624E88;
+}
+h1{
+    font-size: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+h5{
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+p{
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.sizefild ,.colorfild ,.quantityfild {
+    width: 25vw;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.sizeselect {
+    margin-left: 40px;
+}
+.sizeselect span{
+    cursor: pointer;
+}
+.sizeselect label , .colorselect label{
+    margin-left: 7px;
+}
+.sizeselect input:checked + span{
+    color: #fff;
+}
+.sizeselect input , .colorselect input{
+    display: none;
+}
+.colorselect{
+    margin-left: 30px;
+}
+.colorselect span{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+}
+.colorselect input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #000; 
+}
+#Red{
+    background: red;
+}
+#White{
+    background: white;
+}
+#Blue{
+    background: blue;
+}
+#Black{
+    background: black;
+}
+.quantityselect{
+    margin-left: 15px;
+}
+.quantityselect input{
+    width: 30px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 25px;
+}
+.buttonfild{
+    width: 25vw;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.buttonfild button{
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    background: #553ff0;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .main{
+        width: 100vw;
+        height: 100vh;
+    }
+    .conatiner{
+        width: 90vw;
+        height: 90vh;
+        border-radius: 30px;   
+        display: block; 
+    }
+    .left{
+        width: 90vw;
+        height: 45vh;
+        border-radius: 30px;
+        background-color: #CB80AB;
+        position: relative;
+    }
+    .left img{
+        width: 90vw;
+        height: 45vh;
+        object-fit: contain;
+    }
+    .right{
+        width: 90vw;
+        height: 45vh;
+        padding: 10px 0px;
+        border-radius: 30px;
+        background-color: #624E88;
+    }
+    .sizefild ,.colorfild ,.quantityfild {
+        width: 90vw;
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .buttonfild{
+        width: 90vw;
+        display: flex;
+        padding-left: 25px;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .buttonfild button{
+        width: 70vw;
+        height: 5vh;
+    }
+}
