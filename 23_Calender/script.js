@@ -5,7 +5,7 @@ let year = document.querySelector(".year")
 let currentdate = new Date()
 // console.log(date);
 
-let Allday = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+let Allday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 let Allmonth = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
 date.innerHTML = currentdate.getDate()
