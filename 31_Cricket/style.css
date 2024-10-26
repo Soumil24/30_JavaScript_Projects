@@ -97,14 +97,14 @@
 }
 .score{
     width: 70vw;
-    /* height: 80vh; */
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     /* background: red; */
     color: #fff;
-    /* display: none; */
+    display: none;
 }
 .team1{
     padding: 20px;

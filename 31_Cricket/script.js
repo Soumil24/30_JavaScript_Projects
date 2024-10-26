@@ -68,16 +68,17 @@ selectfield.onclick = () => {
 }
 button.onclick = ()=>{
     selectmenu.style.display = "none"
+    score.style.display = "flex"
     data.forEach(element => {
         if (Id == element.id) {
             name1.innerHTML = element.teams[0]
             name2.innerHTML = element.teams[1]
             run1.innerHTML = element.score[0].r
             wicket1.innerHTML = element.score[0].w
-            over1.innerHTML = element.score[0].r
+            over1.innerHTML = element.score[0].o
             run2.innerHTML = element.score[1].r
             wicket2.innerHTML = element.score[1].w
-            over2.innerHTML = element.score[1].r
+            over2.innerHTML = element.score[1].o
         }
     });
 }
