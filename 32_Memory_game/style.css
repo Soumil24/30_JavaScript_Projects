@@ -12,21 +12,26 @@
 }
 .wrapper{
     width: 40em;
-    height: 30em;
+    /* height: 30em; */
     background: white;
-    /* display: flex;
+    border-radius: 20px;
+    display: flex;
     align-items: center;
-    justify-content: center; */
-    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    /* position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 50%;
+    top: 50%; */
 }
 .game-container{
     margin: 1.0em;
     position: relative;
     width: 100%;
     display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .status_container{
     text-align: right;
@@ -92,7 +97,7 @@ button{
 #stop{
     display: block;
     font-size: 1.1em;
-    margin: 1.1em auto 0 auto;
+    /* margin: 1.1em auto 0 auto; */
     background: black;
     color: white;
 }
@@ -112,4 +117,34 @@ button{
 #result h4{
     font-size: 1.8em;
     margin: 0.6em 0  0;
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        width: 100vw;
+        height: 100vh;
+    }
+    .wrapper{
+        width: 100vw;
+    }
+    .status_container{
+        font-size: 25px;
+        margin: 20px 20px 0px 20px;
+    }
+    .game-container{
+        margin: 20px 0px;
+        width: 100%;
+        gap: 10px;
+    }
+    .card-continer{
+        width: 20vw;
+        height: 20vw;
+    }
+    .image{
+        width: 20vw;
+        height: 20vw;
+    }
+    #stop{
+        margin: 20px;
+    }
 }
